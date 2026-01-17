@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#body1{
+    width: 100%;
+    min-height: 100vh;
+    background: url('./7.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.imeg  img {
+   position: absolute ;
+  display: flex;
+  border-radius: 60px;
+  width: 85px;
+  height: 100px;
+   
+   
+ }
+ 
+ 
+.form-box{
+    position:relative ;
+    width: 400px;
+    height: 450px;
+    background-color: aliceblue;
+    background:transparent;
+    border: 2px solid #b9b9b986;
+    border-radius:20px ;
+   backdrop-filter: blur(15px);
+
+   display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2{
+    font-size: 2em;
+    color:#fff;
+    text-align: center;
+}
+
+ .input-box{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px  solid#fff;
+
+ }
+ .input-box label{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translatey(-50%);
+    color: #ffffff;
+   transition: 0.5s;
+ }
+
+ .input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+   border: none;
+   outline: none;
+   font-size: 1em;
+   padding: 0 35px 0 5px;
+   color: #fff;
+
+ }
+
+ .input-box ion-icon{
+
+    position: absolute;
+    right: 8px;
+    color:#fff;
+    font-size: 1.2em;
+    top: 20px;
+ }
+   input:focus~label,
+   input:valid~label{
+    top: -5px;
+   }
+ 
+ .forget {
+    margin: -15px  0 15px; 
+    font-size: 0.9em;
+    color: #fff;
+    display: flex; 
+    justify-content: space-between;
+
+ }
+
+ .forget label input{
+margin-right: 3px;
+
+ }
+  .forget label a{
+    color: #777474;
+    text-decoration: none;
+  }
+  .long {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+border-radius: 40px;
+  }
+  .long a{
+    text-decoration: none;
+    color: #000000;
+      width:50%;
+    height: 40%;
+  }
+  .long h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+  }
+   .long:hover{
+    background:#777474 ;
+    
+   }
+  
+  .forget label a:hover{
+    color: #0125ec;
+    text-decoration: underline;
+  }
+
+  button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+  
+  }
+button a{
+  text-decoration: none;
+  color: #000;
+}
+  button:hover{
+    background: #706c6c;
+  }
+
+   .reister{
+    font-size: 0.9em;
+    color:#fff;
+    text-align: center;
+    margin: 25px  0  25px; 
+  }
+
+
+  .reister p a{
+    color: #777474;
+    text-decoration: none;
+    font-weight: 600; 
+  }
+
+    .reister p a:hover{
+     
+    text-decoration: underline;
+    color: #0125ec;
+      
+  }
