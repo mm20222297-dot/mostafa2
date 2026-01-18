@@ -1,0 +1,12 @@
+<div class="bannner">
+        <div class="slider" style="--quantity: 10" >
+            <div class="item" style="--position: 1"> <img src="./imeg/1.jpg" alt=""> </div>
+            <div class="item" style="--position: 2"> <img src="./imeg/2.jpg" alt=""> </div>
+            <div class="item" style="--position: 3"> <img src="./imeg/3.png" alt=""> </div>
+            <div class="item" style="--position: 4"> <img src="./imeg/4.jpg" alt=""> </div>
+            <div class="item" style="--position: 5"> <img src="./imeg/5.jpg" alt=""> </div>
+            <div class="item" style="--position: 6"> <img src="./imeg/6.jpg" alt=""> </div>
+            <div class="item" style="--position: 7"> <img src="./imeg/7.jpg" alt=""> </div>
+            <div class="item" style="--position: 8"> <img src="./imeg/8.png" alt=""> </div>
+            <div class="item" style="--position: 9"> <img src="./imeg/9.jpg" alt=""> </div>
+            <div class="item" style="--position: 10"> <img src="./imeg/10.jpg" alt=""> </div>

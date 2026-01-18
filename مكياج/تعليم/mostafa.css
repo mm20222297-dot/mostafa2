@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background: url(./imeg/11.jpg) no-repeat;
+   background-size: cover;
+
+}
+.bannner{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.bannner .slider{
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style:preserve-3d ;
+    transform: perspective(1000px);
+    animation: aUtoRun 20S linear infinite;
+}
+@keyframes aUtoRun{
+    from{
+        transform: perspective(1000px)rotateX(-16deg)  rotateY(0deg);
+    }to{
+        transform: perspective(1000px)rotateX(-16deg)  rotateY(360deg);
+    }
+
+}
+    
+ 
+.bannner .slider .item{
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: 
+    
+    rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+    translateZ(550px);
+}
+.bannner .slider .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover ;
+}
+.bannner .content{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1400px, 100vw);
+    height: max-content;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+    align-items: center;
+}
+.bannner .content h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10em;
+    line-height: 1em;
+    color: #ffffff;
+}
+.bannner .content .author{
+    font-family: poppins;
+    text-align: right;
+    max-width: 200px;
+}
+.bannner .content h2{
+    font-size: 3em;
+}
+ 
