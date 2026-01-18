@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mostaf.css">
+</head>
+<body>
+
+<nav>
+    <a href="#"><img src="./1.jpg" width="90" alt=""></a>
+
+    <div class="nav-countery">
+       <ion-icon name="location"></ion-icon>
+       <div>
+        <p>Deliver to</p>
+        <h1>United Kingdom</h1>
+      </div>
+    </div>
+
+    <div class="nav-search">
+        <div class="nav-search-gategory">
+            <p>All</p> 
+            <ion-icon name="arrow-down-outline"></ion-icon>
+        </div>
+        <input type="text" class="nav-search-input" placeholder="STORE  A TO Z">
+        <img src="./imeg/6.jpg" class="nav-search-icon" alt="">
+    </div>
+
+    <div class="nav-language">
+        <img src="./imeg/7.png" width="25px" alt="">
+        <p>EN</p>
+        <ion-icon name="arrow-down-outline"></ion-icon>
+    </div>
+
+    <div class="div-text">
+        <p>Hello, Sign in</p>
+        <h1>Account & Lists <ion-icon name="arrow-down"></ion-icon></h1>
+    </div>
+
+    <div class="div-text">
+        <p>Return</p>
+        <h1>& Orders</h1>
+    </div>
+
+    <a href="cart.html" class="nav-cart">
+        <ion-icon name="cart-outline"></ion-icon>
+        <h4>Cart</h4>
+    </a>
+
+</nav>
+
+<p class="breadcrum"> Video Games > PC > Accessories > Monitor </p>
+
+<div class="product-display">
+
+    <div class="product-d-image"> 
+        <div class="porducr-icons">
+            <img src="./imeg/صور/1.webp" alt="" width="60">
+            <img src="./imeg/صور/1.webp" alt="" width="60">
+            <img src="./imeg/صور/1.webp" alt="" width="60">
+        </div>
+        <div class="product-main-imgage">
+            <img src="./imeg/صور/1.webp" alt="" width="400">
+        </div>
+    </div>
+
+    <div class="product-d-details"> 
+        <p class="product-titel">
+            📺 Computer Monitor — vibrant colors & high resolution
+        </p>
+
+        <div class="product-rating">
+            <div>5.0 ⭐⭐⭐⭐⭐ <p>104,185 ratings</p></div>
+            <p><span># Best seller</span> in PC Game</p>
+            <hr>
+        </div>
+
+        <div class="product-d-price">
+            <div>
+                <p>- 40%</p>
+                <h1>$<span id="productPrice">190</span>.99</h1>
+            </div>
+        </div>
+
+        <div class="product-description">
+            <h1>About this item</h1>
+            <p>High-end gaming monitor with fast refresh rate and stunning colors.</p>
+        </div>
+    </div>
+
+    <div class="product-d-purchase">
+        <div class="title">
+            <h3>Buy new:</h3>
+        </div>
+
+        <h1 class="Price">$<span>190</span>.99</h1>
+
+        <h2 class="porduct-stcok">In Stock</h2>
+
+        <select class="porduc-quantity" id="qtySelect">
+            <option value="1">Quantity: 1</option>
+            <option value="2">Quantity: 2</option>
+            <option value="3">Quantity: 3</option>
+        </select>
+
+        <!-- زر الإضافة للسلة المتعدل -->
+        <button 
+            class="btn add-to-cart"
+            data-name="Gaming Monitor"
+            data-price="190"
+            data-img="./imeg/صور/1.webp"
+        >
+            Add to cart
+        </button>
+
+        <button class="btn product-buy">Buy Now</button>
+    </div>
+
+</div>
+
+<footer class="product-footer">
+    <img src="./1.jpg" width="80PX" alt="">
+    <p>@STORE  A TO Z</p>
+</footer>
+
+<script src="cart-system.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
