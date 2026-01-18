@@ -99,14 +99,17 @@ border-radius: 0 4px 4px 0;
     font-size: 15px;
 }
  .nav-bottom ion-icon{
-    width: 30px;
+    width: 20px;
     height: 30px;
+   
+   
 }
  
 .nav-bottom div{
     display: flex;
     align-items: center;
-    gap:15px ;
+     
+    gap:20px ;
     font-weight:500 ;
 }
 .right-col{
@@ -145,7 +148,7 @@ height: 80vh;
  }
 .hrader-slider a{
 position: absolute;
-top: 50%;
+top: 30%;
 z-index: 1;
 padding: 5vh 1vw;
 background:#ffffff8f;
@@ -373,72 +376,216 @@ footer{
   direction: rtl;
   text-align: right;
 }
-
-@media (max-width: 900px){
-    .nav-search{
-        order: 7;
-        width: 100%;
-        margin: 15px 0;
-    }
-
-    .box-col{
-        width: 48%;
-    }
+@media (max-width:1200px){
+  .box-row{
+    grid-template-columns:repeat(3,1fr);
+  }
 }
 
- 
-@media (max-width: 600px){
-    .nav-countery,
-    .nav-language,
-    .div-text{
-        display: none;
-    }
+/* 📱 Tablet */
+@media (max-width:900px){
+  .box-row{
+    grid-template-columns:repeat(2,1fr);
+  }
 
-    .mobile-user-icon{
-        display: flex;
-        margin-left: auto;
-    }
-
-    .nav-cart h4{
-        display: none;
-    }
-
-    .nav-cart ion-icon{
-        width: 25px;
-        height: 25px;
-    }
-
-    .nav-bottom{
-        overflow-x: auto;
-        white-space: nowrap;
-        font-size: 13px;
-    }
-
-    .box-col{
-        width: 100%;
-    }
-
-    footer{
-        flex-direction: column;
-        gap: 10px;
-        font-size: 14px;
-    }
-}
-@media (max-width: 1024px){
-    .box-col{
-        width: 32%;
-    }
+  .nav-search{
+    order:10;
+    margin-top:10px;
+  }
 }
 
- 
-@media (max-width: 600px){
-    .box-col{
-        width: 100%;
-    }
+/* 📱 Mobile */
+@media (max-width:600px){
+  .nav-countery,
+  .nav-language,
+  .div-text{
+    display:none;
+  }
+
+  .nav-cart h4{
+    display:none;
+  }
+
+  .box-row{
+    grid-template-columns:1fr;
+  }
+
+  footer{
+    flex-direction:column;
+    gap:10px;
+    text-align:center;
+    padding:20px;
+  }
 }
 
-
+/* RTL SUPPORT */
 [dir="rtl"]{
-    direction: rtl;
-    text-align: right;
+  direction:rtl;
+  text-align:right;
+}
+/* =====================
+   RESPONSIVE SHRINK ONLY
+===================== */
+
+/* 💻 Laptop */
+@media (max-width: 1200px) {
+  nav {
+    padding: 8px 15px;
+  }
+
+  .nav-search {
+    max-width: 800px;
+  }
+
+  .box-col {
+    width: 32%;
+  }
+
+  .box-col img {
+    height: 220px;
+  }
+}
+
+/* 📱 Tablet */
+@media (max-width: 900px) {
+  nav {
+    padding: 8px 10px;
+  }
+
+  .nav-search {
+    max-width: 650px;
+  }
+
+  .nav-cart ion-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .box-col {
+    width: 48%;
+  }
+
+  .box-col img {
+    height: 200px;
+  }
+
+  .products img {
+    min-width: 140px;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  nav {
+    padding: 6px 8px;
+  }
+
+  .nav-search {
+    max-width: 100%;
+  }
+
+  .nav-search-gategory {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .nav-search-input {
+    font-size: 13px;
+  }
+
+  .nav-cart ion-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .box-col {
+    width: 100%;
+  }
+
+  .box-col img {
+    height: 180px;
+  }
+
+  .products img {
+    min-width: 120px;
+    padding: 15px;
+  }
+
+  footer {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+/* =====================
+   NAV-BOTTOM RESPONSIVE
+   SHRINK ONLY
+===================== */
+
+.nav-bottom {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 20px;
+  white-space: nowrap;
+}
+
+/* 💻 Laptop */
+@media (max-width: 1200px) {
+  .nav-bottom {
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .nav-bottom ion-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  #icon {
+    width: 34px;
+  }
+}
+
+/* 📱 Tablet */
+@media (max-width: 900px) {
+  .nav-bottom {
+    gap: 12px;
+    font-size: 13px;
+  }
+
+  .nav-bottom ion-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  #icon {
+    width: 30px;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  .nav-bottom {
+    gap: 10px;
+    font-size: 12px;
+    padding: 6px 10px;
+    overflow-x: auto;
+  }
+
+  .nav-bottom::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-bottom ion-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  #icon {
+    width: 26px;
+  }
+
+  .mode-switch {
+    font-size: 12px;
+  }
 }
