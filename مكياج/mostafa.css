@@ -47,5 +47,115 @@
     object-fit: cover ;
     border-radius: 20%;
 }
+@media (max-width: 767px){
+  .bannner{
+    min-height: 70vh;
+  }
 
- 
+  .bannner .slider{
+    width: 140px;
+    height: 180px;
+    animation-duration: 25s; /* أبطأ شوية للموبايل */
+  }
+
+  .bannner .slider .item{
+    transform:
+      rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+      translateZ(260px);
+  }
+
+  .bannner .slider .item img{
+    border-radius: 15px;
+  }
+}
+ /* ================= MOBILE ================= */
+@media (max-width: 767px){
+  .bannner{
+    min-height: 70vh;
+  }
+
+  .bannner .slider{
+    width: 140px;
+    height: 180px;
+    animation-duration: 25s; /* أبطأ للموبايل */
+  }
+
+  .bannner .slider .item{
+    transform:
+      rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+      translateZ(260px);
+  }
+
+  .bannner .slider .item img{
+    border-radius: 15px;
+  }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 768px) and (max-width: 1023px){
+  .bannner{
+    min-height: 80vh;
+  }
+
+  .bannner .slider{
+    width: 180px;
+    height: 220px;
+    animation-duration: 22s;
+  }
+
+  .bannner .slider .item{
+    transform:
+      rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+      translateZ(380px);
+  }
+
+  .bannner .slider .item img{
+    border-radius: 18px;
+  }
+}
+
+/* ================= LAPTOP ================= */
+@media (min-width: 1024px) and (max-width: 1439px){
+  .bannner{
+    min-height: 90vh;
+  }
+
+  .bannner .slider{
+    width: 200px;
+    height: 250px;
+    animation-duration: 20s;
+  }
+
+  .bannner .slider .item{
+    transform:
+      rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+      translateZ(450px);
+  }
+
+  .bannner .slider .item img{
+    border-radius: 20px;
+  }
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 1440px){
+  .bannner{
+    min-height: 100vh;
+  }
+
+  .bannner .slider{
+    width: 220px;
+    height: 280px;
+    animation-duration: 18s;
+  }
+
+  .bannner .slider .item{
+    transform:
+      rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+      translateZ(550px);
+  }
+
+  .bannner .slider .item img{
+    border-radius: 22px;
+  }
+}
