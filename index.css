@@ -6,7 +6,7 @@
 
 }
 body{
-    background: #dadada;
+    background: #ffff;
 }
 a{
     text-decoration: none;
@@ -92,7 +92,6 @@ border-radius: 0 4px 4px 0;
 .nav-bottom{
     display: flex;
     align-items: center;
-    
     gap: 20px;
     padding: 8px 20px;
     background: #232f4e;
@@ -102,14 +101,12 @@ border-radius: 0 4px 4px 0;
  .nav-bottom ion-icon{
     width: 30px;
     height: 30px;
-    margin-left: 10px;
 }
  
 .nav-bottom div{
     display: flex;
     align-items: center;
     gap:15px ;
-   
     font-weight:500 ;
 }
 .right-col{
@@ -123,7 +120,7 @@ border-radius: 0 4px 4px 0;
     border-radius: 60%;
 }
 #icon{
-    width: 60px;
+    width: 40px;
     cursor: pointer;
     
 }
@@ -184,7 +181,6 @@ cursor: pointer;
     justify-content: space-between;
      margin: 20px 25px;
 }
-
  .mobile-user-icon ion-icon{
     width: 40px;
     height: 40px;
@@ -193,27 +189,25 @@ cursor: pointer;
  
  
 .box-col{
-  
+    
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 15px 20px;
     background: #fff;
-   width: 24%;
+    max-width: 21%;
     min-height: 200px;
     z-index: 1;
     border-radius: 3px;
      transition: transform .3s ease;
-  
 }
  
 /**/
- .box-col img{
-    max-width: 80%;
-width: 80%;
- height: 250px;
+    
+.box-col img{
+      width: 100%;
+   height: 200px;
 }
-
 
  /**/
 
@@ -271,7 +265,7 @@ margin-top:10px ;
     background: #fbfbfb;
  }
  .product-caed img{
-    width: 150px;
+    width: 120px;
     margin: 0 50px;
  }
  .prodcut-offer{
@@ -306,6 +300,7 @@ font-weight: 400;
     color: #fff;
     background: #0c131d;
     padding: 20px 60px;
+    
 
  }
  @media only screen and (max-width: 900px){
@@ -318,9 +313,6 @@ font-weight: 400;
         margin: 15px 0 5px;
         min-width: 300px;
     }
-       
-  
-
     .box-col{
         max-width: 48%;
     }
@@ -371,10 +363,69 @@ font-size: 15px;
     max-width:100%;
     width: 100%;
 }
-
 footer{
     justify-content: center;
     flex-direction: column;
     font-size: 14px;
 }
   }
+
+  /* ================== PRODUCT CARD ================== */
+.product-caed {
+  min-width: 200px;
+}
+
+/* ================== LAPTOP ================== */
+@media (max-width: 1200px) {
+  .box-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .products img {
+    width: 150px;
+  }
+}
+
+/* ================== TABLET ================== */
+@media (max-width: 900px) {
+  nav {
+    justify-content: center;
+  }
+
+  .box-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products img {
+    width: 130px;
+  }
+}
+
+/* ================== MOBILE ================== */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-search {
+    width: 100%;
+  }
+
+  .nav-bottom {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .box-row {
+    grid-template-columns: 1fr;
+  }
+
+  .products img {
+    width: 110px;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
